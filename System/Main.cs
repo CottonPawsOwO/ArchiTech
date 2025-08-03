@@ -7,11 +7,13 @@ using Nautilus.Handlers;
 using Nautilus.Utility;
 using System;
 using Items.PrecursorMaterials;
+using ArchiTechOwO.Buildables.Crafting.ITF;
 
 namespace ArchiTech
 {
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
     [BepInDependency("com.snmodding.nautilus")]
+    [BepInDependency("com.precursorliblary.mod")]
     public class Plugin : BaseUnityPlugin
     {
         public new static ManualLogSource Logger { get; private set; }
@@ -36,6 +38,9 @@ namespace ArchiTech
 
         private static void RegisterItems()
         {
+            Logger.LogInfo("Registering crafting stations...");
+            InfusedTechFabricator.CreateAndRegister();
+
             Logger.LogInfo("Registering basic resources...");
             PlatinumItem.Register();
             PlatinumDrillableItem.Register();
