@@ -1,0 +1,15 @@
+{
+  "Id": "ArchiTech",
+  "DisplayName": "ArchiTech",
+  "Author": "IonCat",
+  "Version": "1.0.0",
+  "Dependencies": ["Nautilus"],
+  "VersionDependencies": {
+    "Nautilus": "1.0.0"
+  },
+  "Game": "Subnautica",
+  "AssemblyName": "ArchiTech.dll",
+  "Description": "Expands the crafting system with new resources, precursor minerals and advanced materials that make the game more challenging and lore-accurate",
+  "LoadBefore": [],
+  "LoadAfter": ["Nautilus"]
+}
