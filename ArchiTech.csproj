@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE4001C4-7814-4DE1-A22C-F6897E6DAD96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArchiTechOwO</RootNamespace>
+    <AssemblyName>ArchiTechOwO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Accessibility" />
+    <Reference Include="Assembly-CSharp">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Nautilus">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll</HintPath>
+    </Reference>
+    <Reference Include="PrecursorLibrary">
+      <HintPath>..\PrecursorLibrary\bin\Debug\PrecursorLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="UnityEngine">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>F:\STEAM\steamapps\common\Subnautica\Subnautica_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PDAentrys\DenimiumCrystalPDA.cs" />
+    <Compile Include="PDAentrys\GalliumPDA.cs" />
+    <Compile Include="Items\NewBasicMaterials\Gallium\Gallium.cs" />
+    <Compile Include="PDAentrys\IridiumPDA.cs" />
+    <Compile Include="Items\NewBasicMaterials\Iridium\Iridium.cs" />
+    <Compile Include="PDAentrys\VanillaResources\CopperOrePDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\DiamondPDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\GoldPDA.cs" />
+    <Compile Include="Items\NewBasicMaterials\Mercury\Mercury.cs" />
+    <Compile Include="Items\NewBasicMaterials\Mercury\MercuryDrillable.cs" />
+    <Compile Include="PDAentrys\VanillaResources\KyanitePDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\LeadPDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\LithiumPDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\MagnetitePDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\NickelPDA.cs" />
+    <Compile Include="PDAentrys\MercuyPDA.cs" />
+    <Compile Include="Items\NewBasicMaterials\Platinum\Platinum.cs" />
+    <Compile Include="Items\NewBasicMaterials\Platinum\PlatinumDrillable.cs" />
+    <Compile Include="PDAentrys\PlatinumPDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\QuartzPDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\RubyPDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\SaltPDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\SilverPDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\SulfurPDA.cs" />
+    <Compile Include="Items\NewBasicMaterials\Pozium\Pozium.cs" />
+    <Compile Include="Items\NewBasicMaterials\Pozium\PoziumDrillable.cs" />
+    <Compile Include="PDAentrys\PoziumPDA.cs" />
+    <Compile Include="System\Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PDAentrys\VanillaResources\TitaniumPDA.cs" />
+    <Compile Include="PDAentrys\VanillaResources\UraninitePDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PDAentrys\DeniEntry.png" />
+    <Content Include="PDAentrys\GallEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\CoppEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\DiamEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\GoldEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\IridEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\KyanEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\LeadEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\LithEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\MagnetEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\NickeEntry.png" />
+    <Content Include="PDAentrys\MercEntry.png" />
+    <Content Include="PDAentrys\PlatEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\PlatEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\QuartzEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\RubyEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\SaltEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\SilvEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\SulfEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\TitaEntry.png" />
+    <Content Include="PDAentrys\VanillaResources\UraniEntry.png" />
+    <Content Include="PDAentrys\PoziEntry.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
